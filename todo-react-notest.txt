@@ -1,0 +1,9 @@
+1. Installation
+  yarn add typescript @types/node @types/react @types/react-dom @types/jest --dev
+2. Rename .js and .jsx to .ts and .tsx
+3. Migration strategy
+  1. Set strict setting to false (tsconfig).
+  2. Set 'noImplicitAny: false'
+  2. Allow temporary 'any' and fix obvious errors for the compiler to pass.
+  3. Once compiled, revert to strict true and noImplicitAny to true.
+  4. Fix and add more types
